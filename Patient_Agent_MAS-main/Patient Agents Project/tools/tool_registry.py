@@ -20,3 +20,21 @@ RECORDS_AGENT_TOOLS = [
         "description": "Retrieve completed medical procedures."
     }
 ]
+
+LABS_AGENT_TOOLS = [
+    {
+        "name": "analyze_labs_context",
+        "description": (
+            "Analyze laboratory results received from the Records Agent. "
+            "Identify abnormal values and return structured findings."
+        )
+    },
+    {
+        "name": "llm_lab_analysis",
+        "description": (
+            "Analyze abnormal laboratory findings and clinical observations. "
+            "Return the top 3 potential health concerns a physician may wish "
+            "to investigate further. Does not diagnose or recommend treatment."
+        )
+    }
+]
