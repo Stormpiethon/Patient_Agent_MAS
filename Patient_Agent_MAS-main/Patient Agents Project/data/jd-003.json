@@ -1,0 +1,48 @@
+{
+  "patient_id": "jd-003",
+  "name": "Michael Johnson",
+  "age": 52,
+  "gender": "Male",
+  "labs": [
+    {
+      "lab_id": "lab-001",
+      "name": "Hemoglobin",
+      "value": 14.5,
+      "unit": "g/dL",
+      "reference_low": 13.5,
+      "reference_high": 17.5
+    },
+    {
+      "lab_id": "lab-002",
+      "name": "Glucose",
+      "value": 118,
+      "unit": "mg/dL",
+      "reference_low": 70,
+      "reference_high": 99
+    },
+    {
+      "lab_id": "lab-003",
+      "name": "WBC",
+      "value": 7.2,
+      "unit": "K/uL",
+      "reference_low": 4.0,
+      "reference_high": 11.0
+    }
+  ],
+  "observations": [
+    {
+      "date": "2026-06-11",
+      "note": "Patient reports increased thirst and mild fatigue."
+    }
+  ],
+  "medications": [
+    {
+      "name": "Metformin"
+    }
+  ],
+  "procedures": [
+    {
+      "name": "Blood Panel"
+    }
+  ]
+}

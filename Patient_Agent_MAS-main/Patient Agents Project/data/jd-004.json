@@ -1,0 +1,48 @@
+{
+  "patient_id": "jd-004",
+  "name": "Linda Garcia",
+  "age": 61,
+  "gender": "Female",
+  "labs": [
+    {
+      "lab_id": "lab-001",
+      "name": "Hemoglobin",
+      "value": 13.1,
+      "unit": "g/dL",
+      "reference_low": 12.0,
+      "reference_high": 15.5
+    },
+    {
+      "lab_id": "lab-002",
+      "name": "Glucose",
+      "value": 95,
+      "unit": "mg/dL",
+      "reference_low": 70,
+      "reference_high": 99
+    },
+    {
+      "lab_id": "lab-003",
+      "name": "WBC",
+      "value": 17.8,
+      "unit": "K/uL",
+      "reference_low": 4.0,
+      "reference_high": 11.0
+    }
+  ],
+  "observations": [
+    {
+      "date": "2026-06-12",
+      "note": "Patient reports fever, chills, and persistent cough."
+    }
+  ],
+  "medications": [
+    {
+      "name": "Amoxicillin"
+    }
+  ],
+  "procedures": [
+    {
+      "name": "Chest X-Ray"
+    }
+  ]
+}
