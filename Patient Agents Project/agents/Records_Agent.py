@@ -5,6 +5,12 @@ Purpose:
     Retrieve patient information and create structured
     context objects for downstream agents.
 
+Responsibilities:
+    - Retrieve patient information
+    - Build Labs Agent context
+    - Build Cost Agent context
+    - Provide structured outputs to downstream agents
+
 Inputs:
     patient_id
 
@@ -20,7 +26,39 @@ Tools:
     get_procedures
 """
 
-from tools.patient_data import *
+"""
+Example Input:
+
+{
+    "patient_id": "jd-001"
+}
+
+Example Labs Context Output:
+
+{
+    "patient_id": "jd-001",
+    "age": 55,
+    "gender": "Male",
+    "labs": [...],
+    "observations": [...]
+}
+
+Example Cost Context Output:
+
+{
+    "patient_id": "jd-001",
+    "medications": [...],
+    "procedures": [...]
+}
+"""
+
+from tools.patient_data import (
+    get_patient_info,
+    get_labs,
+    get_observations,
+    get_medications,
+    get_procedures
+)
 
 # Retrieve all needed context for the Labs Agent
 def get_labs_context(patient_id):

@@ -3,6 +3,7 @@ from agents.Records_Agent import *
 
 print("*** success on imports ***\n")
 
+# Tool testing
 print(get_patient_info("jd-001"))
 print(get_labs("jd-001"))
 print(get_medications("jd-001"))
