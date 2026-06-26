@@ -1,0 +1,25 @@
+{
+  "patient_id": "jd-017",
+  "name": "Emily Davis",
+  "age": 29,
+  "gender": "Female",
+  "previous_conditions": [],
+
+  "labs": [
+    {
+      "lab_id": "lab-001",
+      "name": "Hemoglobin",
+      "value": 13.9,
+      "unit": "g/dL",
+      "reference_low": 12.0,
+      "reference_high": 15.5
+    }
+  ],
+
+  "observations": [
+    { "date": "2026-06-12", "note": "Routine checkup, no complaints." }
+  ],
+
+  "medications": [],
+  "procedures": []
+}

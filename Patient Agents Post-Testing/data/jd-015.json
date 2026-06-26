@@ -1,0 +1,38 @@
+{
+  "patient_id": "jd-015",
+  "name": "Linda Brown",
+  "age": 63,
+  "gender": "Female",
+  "previous_conditions": ["Chronic Kidney Disease", "Hypertension"],
+
+  "labs": [
+    {
+      "lab_id": "lab-001",
+      "name": "Creatinine",
+      "value": 3.4,
+      "unit": "mg/dL",
+      "reference_low": 0.7,
+      "reference_high": 1.3
+    },
+    {
+      "lab_id": "lab-002",
+      "name": "BUN",
+      "value": 68,
+      "unit": "mg/dL",
+      "reference_low": 7,
+      "reference_high": 20
+    }
+  ],
+
+  "observations": [
+    { "date": "2026-06-09", "note": "Swelling in ankles and reduced urine output." }
+  ],
+
+  "medications": [
+    { "name": "Lisinopril" }
+  ],
+
+  "procedures": [
+    { "name": "Renal Panel" }
+  ]
+}
