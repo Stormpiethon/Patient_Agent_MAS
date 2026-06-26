@@ -1,0 +1,39 @@
+{
+  "patient_id": "jd-013",
+  "name": "Maria Sanchez",
+  "age": 54,
+  "gender": "Female",
+  "previous_conditions": ["Type 2 Diabetes", "Hypertension"],
+
+  "labs": [
+    {
+      "lab_id": "lab-001",
+      "name": "Glucose",
+      "value": 312,
+      "unit": "mg/dL",
+      "reference_low": 70,
+      "reference_high": 99
+    },
+    {
+      "lab_id": "lab-002",
+      "name": "WBC",
+      "value": 16.8,
+      "unit": "K/uL",
+      "reference_low": 4.0,
+      "reference_high": 11.0
+    }
+  ],
+
+  "observations": [
+    { "date": "2026-06-10", "note": "Patient reports frequent urination and extreme thirst." },
+    { "date": "2026-06-10", "note": "Fever and fatigue for 3 days." }
+  ],
+
+  "medications": [
+    { "name": "Metformin" }
+  ],
+
+  "procedures": [
+    { "name": "CBC Panel" }
+  ]
+}
