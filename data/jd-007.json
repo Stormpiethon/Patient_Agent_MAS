@@ -1,0 +1,21 @@
+{
+  "patient_id": "jd-007",
+  "name": "Thomas Brown",
+  "age": 39,
+  "gender": "Male",
+  "previous_conditions": [],
+  
+  "labs": [],
+  "observations": [
+    {
+      "date": "2026-06-15",
+      "note": "Lab results unavailable due to external system outage."
+    }
+  ],
+  "medications": [
+    {
+      "name": "Omeprazole"
+    }
+  ],
+  "procedures": []
+}

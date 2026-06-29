@@ -1,0 +1,50 @@
+{
+  "patient_id": "jd-005",
+  "name": "Robert Wilson",
+  "age": 69,
+  "gender": "Male",
+  "previous_conditions": [],
+  
+  "labs": [
+    {
+      "lab_id": "lab-001",
+      "name": "Hemoglobin",
+      "value": 14.0,
+      "unit": "g/dL",
+      "reference_low": 13.5,
+      "reference_high": 17.5
+    },
+    {
+      "lab_id": "lab-002",
+      "name": "Glucose",
+      "value": 102,
+      "unit": "mg/dL",
+      "reference_low": 70,
+      "reference_high": 99
+    },
+    {
+      "lab_id": "lab-003",
+      "name": "Creatinine",
+      "value": 2.7,
+      "unit": "mg/dL",
+      "reference_low": 0.7,
+      "reference_high": 1.3
+    }
+  ],
+  "observations": [
+    {
+      "date": "2026-06-13",
+      "note": "Patient reports swelling in lower extremities and fatigue."
+    }
+  ],
+  "medications": [
+    {
+      "name": "Lisinopril"
+    }
+  ],
+  "procedures": [
+    {
+      "name": "Blood Panel"
+    }
+  ]
+}

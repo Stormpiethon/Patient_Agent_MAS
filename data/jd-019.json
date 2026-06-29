@@ -1,0 +1,30 @@
+{
+  "patient_id": "jd-019",
+  "name": "Angela White",
+  "age": 46,
+  "gender": "Female",
+  "previous_conditions": ["Immunosuppression"],
+
+  "labs": [
+    {
+      "lab_id": "lab-001",
+      "name": "WBC",
+      "value": 21.5,
+      "unit": "K/uL",
+      "reference_low": 4.0,
+      "reference_high": 11.0
+    }
+  ],
+
+  "observations": [
+    { "date": "2026-06-13", "note": "High fever, chills, and rapid heart rate." }
+  ],
+
+  "medications": [
+    { "name": "Antibiotics" }
+  ],
+
+  "procedures": [
+    { "name": "Blood Culture" }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "patient_id": "jd-002",
+  "name": "Sarah Mitchell",
+  "age": 34,
+  "gender": "Female",
+  "previous_conditions": [],
+  
+  "labs": [
+    {
+      "lab_id": "lab-001",
+      "name": "Hemoglobin",
+      "value": 14.2,
+      "unit": "g/dL",
+      "reference_low": 12.0,
+      "reference_high": 15.5
+    },
+    {
+      "lab_id": "lab-002",
+      "name": "Glucose",
+      "value": 91,
+      "unit": "mg/dL",
+      "reference_low": 70,
+      "reference_high": 99
+    },
+    {
+      "lab_id": "lab-003",
+      "name": "WBC",
+      "value": 6.8,
+      "unit": "K/uL",
+      "reference_low": 4.0,
+      "reference_high": 11.0
+    }
+  ],
+  "observations": [
+    {
+      "date": "2026-06-10",
+      "note": "Routine annual physical. No complaints reported."
+    }
+  ],
+  "medications": [
+    {
+      "name": "Levothyroxine"
+    }
+  ],
+  "procedures": [
+    {
+      "name": "Physical Therapy Evaluation"
+    }
+  ]
+}

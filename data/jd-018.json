@@ -1,0 +1,30 @@
+{
+  "patient_id": "jd-018",
+  "name": "Thomas Lee",
+  "age": 77,
+  "gender": "Male",
+  "previous_conditions": ["Stroke", "Hypertension"],
+
+  "labs": [
+    {
+      "lab_id": "lab-001",
+      "name": "Glucose",
+      "value": 160,
+      "unit": "mg/dL",
+      "reference_low": 70,
+      "reference_high": 99
+    }
+  ],
+
+  "observations": [
+    { "date": "2026-06-08", "note": "Mild speech difficulty and confusion episodes." }
+  ],
+
+  "medications": [
+    { "name": "Aspirin" }
+  ],
+
+  "procedures": [
+    { "name": "CT Scan" }
+  ]
+}
