@@ -31,3 +31,16 @@ test_results/
 # Build artifacts
 build/
 dist/
+frontend/dist/
+frontend/node_modules/
+
+# SSH Keys
+*.pem
+Patient2Key.pem
+
+# Logs
+*.log
+nohup.out
+
+# API
+api.log
