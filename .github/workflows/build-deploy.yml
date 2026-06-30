@@ -19,7 +19,6 @@ jobs:
         username: ${{ secrets.VM_USER }}
         key: ${{ secrets.PATIENT_SSH_KEY }}
         port: 22
-        script_stop: true
         script: |
           set -e
 
