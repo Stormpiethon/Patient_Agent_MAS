@@ -1,0 +1,57 @@
+name: Build & Deploy on Server
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Deploy to Azure VM
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.VM_IP }}
+        username: ${{ secrets.VM_USER }}
+        key: ${{ secrets.PATIENT_SSH_KEY }}
+        script: |
+          set -e
+
+          echo "📂 Navigating to project directory..."
+          cd /home/azureuser/Patient_Agent_MAS
+
+          echo "📥 Pulling latest code..."
+          git pull origin main
+
+          echo "🛑 Stopping running containers..."
+          docker compose down || true
+
+          echo "🔨 Building Docker images on server..."
+          DOCKER_BUILDKIT=1 docker compose build
+
+          echo "📝 Creating .env file..."
+          cat > .env << 'ENVEOF'
+          OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}
+          ENVEOF
+
+          echo "🚀 Starting containers..."
+          docker compose -f docker-compose.yml up -d
+
+          sleep 5
+
+          echo "✅ Deployment complete!"
+          echo ""
+          echo "📊 Container Status:"
+          docker compose ps
+
+          echo ""
+          echo "🧪 Health Check:"
+          curl -s http://localhost/api/health || echo "Waiting for API..."
+
+          echo ""
+          echo "════════════════════════════════════════"
+          echo "✅ Application deployed successfully!"
+          echo "🌐 Frontend: http://172.191.149.139"
+          echo "🔌 API: http://172.191.149.139/api"
+          echo "════════════════════════════════════════"
