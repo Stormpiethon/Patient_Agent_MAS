@@ -1,0 +1,50 @@
+# Git
+.git
+.gitignore
+
+# Node
+node_modules
+npm-debug.log
+dist
+frontend/node_modules
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+venv
+.venv
+env
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Deployment
+.env
+.env.local
+*.pem
+
+# CI/CD
+.github
+
+# Docker
+Dockerfile*
+docker-compose.yml
+.dockerignore
+
+# Docs
+README.md
+DEPLOYMENT.md
+
+# Logs
+*.log
+nohup.out
