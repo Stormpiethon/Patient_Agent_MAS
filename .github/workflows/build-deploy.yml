@@ -14,16 +14,16 @@ jobs:
 
     - name: Setup SSH Key
       run: |
-        mkdir -p ~/.ssh
-        echo "${{ secrets.PATIENT_SSH_KEY }}" > ~/.ssh/deploy_key
-        chmod 600 ~/.ssh/deploy_key
+        mkdir -p /home/runner/.ssh
+        echo "${{ secrets.PATIENT_SSH_KEY }}" > /home/runner/.ssh/deploy_key
+        chmod 600 /home/runner/.ssh/deploy_key
 
     - name: Deploy to Azure VM
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.VM_IP }}
         username: ${{ secrets.VM_USER }}
-        key_path: ~/.ssh/deploy_key
+        key_path: /home/runner/.ssh/deploy_key
         port: 22
         script: |
           set -e
